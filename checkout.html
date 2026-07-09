@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Checkout — WEAR CORNER</title>
-<meta name="description" content="Complete your WEAR CORNER order. Cash on delivery, Whish, or OMT across Lebanon.">
+<title>Checkout — UNDRESS</title>
+<meta name="description" content="Complete your UNDRESS order. Cash on delivery, Whish, or OMT across Lebanon.">
 <link rel="icon" type="image/jpeg" href="logo.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
@@ -166,8 +166,8 @@
 <header>
   <nav class="wrap">
     <a href="index.html" class="brand">
-      <img class="logo-img" src="logo.jpg" alt="Wear Corner logo">
-      WEAR CORNER
+      <img class="logo-img" src="logo.jpg" alt="Undress logo">
+      UNDRESS
     </a>
     <a class="nav-cta" href="index.html#shop">← Back to Shop</a>
   </nav>
@@ -265,12 +265,12 @@
   <div class="stitch" style="margin-bottom:32px;"></div>
   <div class="wrap">
     <a href="index.html" class="brand">
-      <img class="logo-img" src="logo.jpg" alt="Wear Corner logo">
-      WEAR CORNER
+      <img class="logo-img" src="logo.jpg" alt="Undress logo">
+      UNDRESS
     </a>
     <div class="links">
       <a href="https://wa.me/961XXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
-      <a href="https://www.instagram.com/wearcorner.lb" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.instagram.com/undress.lb" target="_blank" rel="noopener">Instagram</a>
     </div>
   </div>
   <p class="fine" id="fine"></p>
@@ -279,13 +279,13 @@
 <script>
 'use strict';
 
-// ⚠️ REPLACE with Wear Corner's real WhatsApp number (country code, no +)
+// ⚠️ REPLACE with Undress's real WhatsApp number (country code, no +)
 const WHATSAPP_NUMBER = '961XXXXXXXX';
 
-// ---- Load cart saved by main.js (sessionStorage key: wc_cart) ----
+// ---- Load cart saved by main.js (sessionStorage key: undress_cart) ----
 let items = [];
 try {
-  items = JSON.parse(sessionStorage.getItem('wc_cart') || '[]');
+  items = JSON.parse(sessionStorage.getItem('undress_cart') || '[]');
 } catch (e) {
   items = [];
 }
@@ -355,7 +355,7 @@ document.getElementById('sendOrder').addEventListener('click', () => {
   const notes  = document.getElementById('fNotes').value.trim();
   const pay    = document.querySelector('input[name="pay"]:checked').value;
 
-  let msg = '🛒 *New Order from WEAR CORNER Website*\n\n';
+  let msg = '🛒 *New Order from UNDRESS Website*\n\n';
   msg += '👤 *Name:* ' + nameEl.value.trim() + '\n';
   msg += '📱 *Phone:* ' + phoneEl.value.trim() + '\n';
   msg += '📍 *Area:* ' + areaEl.value.trim() + '\n';
@@ -378,14 +378,14 @@ document.getElementById('sendOrder').addEventListener('click', () => {
   window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(msg), '_blank');
 
   // clear the cart + show confirmation
-  sessionStorage.removeItem('wc_cart');
+  sessionStorage.removeItem('undress_cart');
   document.getElementById('sendOrder').style.display = 'none';
   document.getElementById('sentConfirm').style.display = 'block';
 });
 
 // footer year
 document.getElementById('fine').textContent =
-  '© ' + new Date().getFullYear() + ' WEAR CORNER. Delivery across Lebanon.';
+  '© ' + new Date().getFullYear() + ' UNDRESS. Lebanon-wide delivery.';
 </script>
 
 </body>

@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WEAR CORNER — Elegant Clothing, Trusted Service</title>
-<meta name="description" content="WEAR CORNER. Elegant clothing, trusted service. Inspect before payment. Guaranteed quality. Delivery across Lebanon.">
+<title>UNDRESS — Streetwear, Cut Clean</title>
+<meta name="description" content="UNDRESS. Streetwear essentials cut clean and worn loud. Cash on delivery across Lebanon, exchange within 24 hours.">
 <link rel="icon" type="image/jpeg" href="logo.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -18,13 +18,15 @@
 <header>
   <nav class="wrap">
     <a href="#top" class="brand">
-      <img class="logo-img" src="logo.jpg" alt="Wear Corner logo">
-      WEAR CORNER
+      <img class="logo-img" src="logo.jpg" alt="Undress logo">
+      UNDRESS
     </a>
     <div class="nav-right">
       <a class="nav-link" href="#shop">Shop</a>
+      <a class="nav-link" href="#story">Story</a>
+      <a class="nav-link" href="#letters">Reviews</a>
       <button class="cart-toggle" id="cartToggle" aria-label="Open cart">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
         <span class="cart-count" id="cartCount">0</span>
       </button>
     </div>
@@ -35,14 +37,14 @@
 <div class="cart-overlay" id="cartOverlay"></div>
 <aside class="cart-drawer" id="cartDrawer">
   <div class="cart-header">
-    <h3>Your Order</h3>
+    <h3>Your Bag</h3>
     <button class="cart-close" id="cartClose" aria-label="Close cart">&times;</button>
   </div>
   <div class="cart-body" id="cartBody">
-    <p class="cart-empty" id="cartEmpty">Your cart is empty.</p>
+    <p class="cart-empty" id="cartEmpty">Your bag is empty.</p>
   </div>
   <div class="cart-footer" id="cartFooter" style="display:none;">
-    <button class="btn btn-primary cart-send" id="cartSend" style="width:100%;padding:16px;font-size:.78rem;display:flex;align-items:center;justify-content:center;gap:10px;">
+    <button class="btn btn-primary cart-send" id="cartSend" style="width:100%;padding:16px;font-size:.75rem;display:flex;align-items:center;justify-content:center;gap:10px;">
       Proceed to Checkout →
     </button>
   </div>
@@ -50,45 +52,120 @@
 
 <main id="top">
 
-  <!-- ============ HERO — centered classical ============ -->
-  <section class="hero-cl">
-    <img class="logo-img" src="logo.jpg" alt="Wear Corner monogram">
-    <span class="est">Est. Beirut — Since 2024</span>
-    <h1><span>W</span><span>C</span></h1>
-    <span class="wordmark">Wear Corner</span>
-    <span class="ornament" aria-hidden="true"><span class="dot"></span></span>
-    <p class="tagline">Elegant clothing, trusted service. Inspect your order before payment. Guaranteed quality, delivered across Lebanon.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-primary" href="#shop">Shop the Collection</a>
-      <a class="btn btn-ghost" href="https://www.instagram.com/wearcorner.lb" target="_blank" rel="noopener">Instagram</a>
+  <!-- ============ HERO — asymmetric editorial split ============ -->
+  <section class="hero-x">
+    <!-- kinetic wordmark scrolling behind the whole hero -->
+    <div class="kinetic-bg" aria-hidden="true">
+      <div class="kinetic-row row-a"><span>UNDRESS · UNDRESS · UNDRESS · UNDRESS · UNDRESS · UNDRESS · </span><span>UNDRESS · UNDRESS · UNDRESS · UNDRESS · UNDRESS · UNDRESS · </span></div>
+      <div class="kinetic-row row-b"><span>CUT CLEAN · WORN LOUD · CUT CLEAN · WORN LOUD · CUT CLEAN · WORN LOUD · </span><span>CUT CLEAN · WORN LOUD · CUT CLEAN · WORN LOUD · CUT CLEAN · WORN LOUD · </span></div>
+      <div class="kinetic-row row-c"><span>BEIRUT · 2026 · BEIRUT · 2026 · BEIRUT · 2026 · BEIRUT · 2026 · BEIRUT · 2026 · </span><span>BEIRUT · 2026 · BEIRUT · 2026 · BEIRUT · 2026 · BEIRUT · 2026 · BEIRUT · 2026 · </span></div>
+    </div>
+
+    <!-- radial gold spotlight -->
+    <div class="hero-spot" aria-hidden="true"></div>
+
+    <div class="wrap hero-x-grid">
+      <div class="hero-x-copy">
+        <span class="hero-tag"><span class="dot"></span> Est. Beirut / 2026</span>
+        <h1>
+          Streetwear,<br>
+          <em>cut clean.</em>
+        </h1>
+        <p class="lede">Heavyweight essentials, sharp cuts, honest prices. No borrowed logos. Delivered to your door across Lebanon.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#shop">Shop the Drop <span class="arr">→</span></a>
+          <a class="btn btn-ghost" href="#story">The Story</a>
+        </div>
+
+        <!-- micro-stats row -->
+        <div class="hero-stats">
+          <div><span class="num">08</span><span class="lbl">Pieces in stock</span></div>
+          <div><span class="num">24h</span><span class="lbl">Exchange window</span></div>
+          <div><span class="num">LB</span><span class="lbl">Nationwide reach</span></div>
+        </div>
+      </div>
+
+      <div class="hero-x-mark">
+        <div class="mark-plate">
+          <img src="logo.jpg" alt="Undress brand mark">
+          <div class="mark-ring" aria-hidden="true"></div>
+        </div>
+        <div class="mark-caption">
+          <span class="dash"></span>
+          <span>The Mark</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ============ SERVICES BAR — 3-column key/value ============ -->
-  <section class="services" aria-label="Services">
-    <div class="wrap services-row">
-      <div>
-        <span class="lbl">The Promise</span>
-        <span class="val">Inspect Before Payment</span>
-      </div>
-      <div>
-        <span class="lbl">The Standard</span>
-        <span class="val">Guaranteed Quality</span>
-      </div>
-      <div>
-        <span class="lbl">The Reach</span>
-        <span class="val">Delivery Across Lebanon</span>
-      </div>
+  <!-- ============ TICKER MARQUEE — services ============ -->
+  <section class="ticker" aria-label="Store services">
+    <div class="ticker-track">
+      <span>Cash on Delivery</span><span class="sep" aria-hidden="true"></span>
+      <span>Exchange in 24 Hrs</span><span class="sep" aria-hidden="true"></span>
+      <span>Lebanon-Wide Delivery</span><span class="sep" aria-hidden="true"></span>
+      <span>Checked Before Dispatch</span><span class="sep" aria-hidden="true"></span>
+      <span>New Drops Weekly</span><span class="sep" aria-hidden="true"></span>
+      <!-- duplicated for seamless loop -->
+      <span>Cash on Delivery</span><span class="sep" aria-hidden="true"></span>
+      <span>Exchange in 24 Hrs</span><span class="sep" aria-hidden="true"></span>
+      <span>Lebanon-Wide Delivery</span><span class="sep" aria-hidden="true"></span>
+      <span>Checked Before Dispatch</span><span class="sep" aria-hidden="true"></span>
+      <span>New Drops Weekly</span><span class="sep" aria-hidden="true"></span>
     </div>
   </section>
 
-  <!-- ============ CREDO — italic pull-quote ============ -->
-  <section class="credo">
-    <div class="wrap reveal">
-      <div class="rule-sm"></div>
-      <h2>Dressing well is a <em>quiet</em> kind of discipline.</h2>
-      <p>Wear Corner keeps a small, considered range — pieces chosen for the way they sit, the way they wash, the way they hold up. Nothing gets sent until it's been checked. And nothing gets paid for until it's in your hands.</p>
-      <span class="ornament" aria-hidden="true"><span class="dot"></span></span>
+  <!-- ============ BENTO — brand story in asymmetric grid ============ -->
+  <section class="bento" id="story">
+    <div class="wrap">
+      <div class="bento-head reveal">
+        <span class="eyebrow"><span class="dot"></span> The House Code</span>
+        <h2>Built loud. Priced fair.</h2>
+      </div>
+
+      <div class="bento-grid">
+        <!-- big statement tile -->
+        <article class="tile tile-lead reveal">
+          <span class="tile-idx">01</span>
+          <h3>No borrowed logos. Just the pieces that get worn.</h3>
+          <p>Heavyweight tees, oversized hoodies, cargos that hold their shape. Every drop starts with the same question: would we wear this ourselves?</p>
+        </article>
+
+        <!-- promise tile -->
+        <article class="tile tile-promise reveal">
+          <span class="tile-idx">02</span>
+          <h4>Cash on Delivery</h4>
+          <p>Pay when it's in your hands. Anywhere in Lebanon.</p>
+        </article>
+
+        <!-- exchange tile -->
+        <article class="tile tile-exchange reveal">
+          <span class="tile-idx">03</span>
+          <h4>24-Hour Exchange</h4>
+          <p>Wrong size or fit? We sort it the next day. No questions.</p>
+        </article>
+
+        <!-- mark tile with the brand image -->
+        <article class="tile tile-mark reveal">
+          <img src="logo.jpg" alt="Undress brand mark">
+        </article>
+
+        <!-- check tile -->
+        <article class="tile tile-check reveal">
+          <span class="tile-idx">04</span>
+          <h4>Checked Before Dispatch</h4>
+          <p>Every order inspected by hand before it leaves.</p>
+        </article>
+
+        <!-- pull quote tile -->
+        <article class="tile tile-quote reveal">
+          <blockquote>
+            <span class="qmark">"</span>
+            The best fits shouldn't need a subtitle.
+          </blockquote>
+          <cite>— The House</cite>
+        </article>
+      </div>
     </div>
   </section>
 
@@ -96,16 +173,15 @@
   <section class="shop" id="shop">
     <div class="wrap">
       <div class="shop-head reveal">
-        <span class="kicker">The Collection</span>
+        <span class="eyebrow"><span class="dot"></span> The Collection</span>
         <h2>Pick your piece.</h2>
-        <p class="head-sub">Select size &amp; colour, add to cart, send the order on WhatsApp.</p>
-        <span class="ornament" aria-hidden="true"><span class="dot"></span></span>
+        <p class="head-sub">Select size &amp; colour, add to bag, send the order on WhatsApp.</p>
       </div>
 
       <div class="shop-toolbar reveal">
         <div class="search-box">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-          <input type="text" id="searchInput" class="search-input" placeholder="Search polos, shirts, tees...">
+          <input type="text" id="searchInput" class="search-input" placeholder="Search hoodies, tees, cargo...">
         </div>
         <div class="filter-pills" id="filterPills"></div>
       </div>
@@ -115,107 +191,98 @@
     </div>
   </section>
 
-  <!-- ============ REVIEWS — stacked "letters" column ============
-       NOTE FOR CLIENT: sample placeholder reviews to show the layout.
-       Replace with real customer feedback before launch. -->
-  <section class="letters">
-    <div class="wrap">
-      <div class="letters-head reveal">
-        <span class="kicker">From The Regulars</span>
-        <h2>Letters received.</h2>
-        <span class="ornament" aria-hidden="true"><span class="dot"></span></span>
+  <!-- ============ REVIEWS — two rows scrolling opposite directions ============
+       NOTE FOR CLIENT: sample placeholder reviews. Swap with real feedback before launch. -->
+  <section class="letters" id="letters">
+    <div class="letters-head reveal">
+      <div class="wrap">
+        <span class="eyebrow"><span class="dot"></span> Field Reports</span>
+        <h2>What the regulars say.</h2>
       </div>
+    </div>
 
-      <div class="letters-list">
-        <figure class="letter reveal">
-          <span class="idx">I.</span>
-          <div>
-            <blockquote>Ordered a polo Tuesday, it was at my door Wednesday. Fit exactly like the sizing guide, quality feels like it costs more.</blockquote>
-            <figcaption>— Karl B, Ashrafieh · ★★★★★</figcaption>
-          </div>
-        </figure>
+    <!-- Row 1 — left -->
+    <div class="review-strip strip-left">
+      <div class="review-track">
+        <figure class="rcard"><span</span><blockquote>El hoodie tqil metel ma bikoun bel real, msh 3ade hal quality bel se3er hayda.</blockquote><figcaption>Nadim K · Beirut</figcaption></figure>
+        <figure class="rcard"><span</span><blockquote>Bought the boxy tee in cream. Cut sits perfectly. Worn it three times this week already.</blockquote><figcaption>Elias M · Dbayeh</figcaption></figure>
+        <figure class="rcard" lang="ar"><span</span><blockquote>وصل الطلب بسرعة والتغليف نظيف. القماش سميك ومريح.</blockquote><figcaption>Hassan T · Tripoli</figcaption></figure>
+        <figure class="rcard"><span</span><blockquote>Cargo pants finally fit like they should — not skinny, not baggy. Perfect.</blockquote><figcaption>Rayan A · Jounieh</figcaption></figure>
+        <figure class="rcard"><span</span><blockquote>Talabet size XL bghalat, baddalouli el yom el tene bala mashekel.</blockquote><figcaption>Charbel D · Hazmieh</figcaption></figure>
+        <!-- duplicated for seamless loop -->
+        <figure class="rcard"><span</span><blockquote>El hoodie tqil metel ma bikoun bel real, msh 3ade hal quality bel se3er hayda.</blockquote><figcaption>Nadim K · Beirut</figcaption></figure>
+        <figure class="rcard"><span</span><blockquote>Bought the boxy tee in cream. Cut sits perfectly. Worn it three times this week already.</blockquote><figcaption>Elias M · Dbayeh</figcaption></figure>
+        <figure class="rcard" lang="ar"><span</span><blockquote>وصل الطلب بسرعة والتغليف نظيف. القماش سميك ومريح.</blockquote><figcaption>Hassan T · Tripoli</figcaption></figure>
+        <figure class="rcard"><span</span><blockquote>Cargo pants finally fit like they should — not skinny, not baggy. Perfect.</blockquote><figcaption>Rayan A · Jounieh</figcaption></figure>
+        <figure class="rcard"><span</span><blockquote>Talabet size XL bghalat, baddalouli el yom el tene bala mashekel.</blockquote><figcaption>Charbel D · Hazmieh</figcaption></figure>
+      </div>
+    </div>
 
-        <figure class="letter reveal">
-          <span class="idx">II.</span>
-          <div>
-            <blockquote>El khedme ktir mnihe, w bala mashekel bal size. Baddalouli el shirt second day.</blockquote>
-            <figcaption>— Fadi H, Jounieh · ★★★★★</figcaption>
-          </div>
-        </figure>
-
-        <figure class="letter reveal">
-          <span class="idx">III.</span>
-          <div>
-            <blockquote lang="ar">تعامل راقي والقماش فعلاً ممتاز. أنصح بالطلب منهم بدون تردد.</blockquote>
-            <figcaption>— Mohamad S, Tripoli · ★★★★★</figcaption>
-          </div>
-        </figure>
-
-        <figure class="letter reveal">
-          <span class="idx">IV.</span>
-          <div>
-            <blockquote>Paid cash at the door, checked everything first — this is how it should always work.</blockquote>
-            <figcaption>— George N, Batroun · ★★★★★</figcaption>
-          </div>
-        </figure>
-
-        <figure class="letter reveal">
-          <span class="idx">V.</span>
-          <div>
-            <blockquote>Sara7a bel awal shakit, bas lamma jeni el order kel shi ken ma3loum w mrattab. Ktir mnih.</blockquote>
-            <figcaption>— Rami D, Baabda · ★★★★★</figcaption>
-          </div>
-        </figure>
-
-        <figure class="letter reveal">
-          <span class="idx">VI.</span>
-          <div>
-            <blockquote lang="ar">اللينن شيرت ناعم وخفيف، بالضبط لجو الصيف. رح رجع اطلب أكيد.</blockquote>
-            <figcaption>— Ali M, Saida · ★★★★★</figcaption>
-          </div>
-        </figure>
+    <!-- Row 2 — right -->
+    <div class="review-strip strip-right">
+      <div class="review-track">
+        <figure class="rcard" lang="ar"><span</span><blockquote>القبعة كتير أنيقة والقصة ممتازة. أكيد رح رجع اطلب.</blockquote><figcaption>Karim R · Saida</figcaption></figure>
+        <figure class="rcard"><span</span><blockquote>Finally a Lebanese brand that isn't trying to be someone else. Ordered twice already.</blockquote><figcaption>Marwan T · Batroun</figcaption></figure>
+        <figure class="rcard"><span</span><blockquote>El zip hoodie fit ktir mnih w el tissue tqil. Value bel prices ma fi metle.</blockquote><figcaption>Ali H · Zahle</figcaption></figure>
+        <figure class="rcard"><span</span><blockquote>Ordered the sweatpants in grey, paid at the door, tried them on. Kept them. Simple.</blockquote><figcaption>Georges N · Achrafieh</figcaption></figure>
+        <figure class="rcard" lang="ar"><span</span><blockquote>الحقيبة صغيرة ومريحة وشكلها فخم. تعامل ممتاز.</blockquote><figcaption>Nadim R · Aley</figcaption></figure>
+        <!-- duplicated -->
+        <figure class="rcard" lang="ar"><span</span><blockquote>القبعة كتير أنيقة والقصة ممتازة. أكيد رح رجع اطلب.</blockquote><figcaption>Karim R · Saida</figcaption></figure>
+        <figure class="rcard"><span</span><blockquote>Finally a Lebanese brand that isn't trying to be someone else. Ordered twice already.</blockquote><figcaption>Marwan T · Batroun</figcaption></figure>
+        <figure class="rcard"><span</span><blockquote>El zip hoodie fit ktir mnih w el tissue tqil. Value bel prices ma fi metle.</blockquote><figcaption>Ali H · Zahle</figcaption></figure>
+        <figure class="rcard"><span</span><blockquote>Ordered the sweatpants in grey, paid at the door, tried them on. Kept them. Simple.</blockquote><figcaption>Georges N · Achrafieh</figcaption></figure>
+        <figure class="rcard" lang="ar"><span</span><blockquote>الحقيبة صغيرة ومريحة وشكلها فخم. تعامل ممتاز.</blockquote><figcaption>Nadim R · Aley</figcaption></figure>
       </div>
     </div>
   </section>
 
-  <!-- ============ PROCESS — single centered column ============ -->
-  <section class="process-cl">
+  <!-- ============ PROCESS — big stacked numbered steps ============ -->
+  <section class="steps-x">
     <div class="wrap">
-      <div class="head reveal">
-        <span class="kicker">How It Works</span>
-        <h2>Three steps.</h2>
-        <span class="ornament" aria-hidden="true"><span class="dot"></span></span>
+      <div class="steps-head reveal">
+        <span class="eyebrow"><span class="dot"></span> How It Works</span>
+        <h2>Three steps. No hassle.</h2>
       </div>
 
-      <div class="steps-cl">
-        <div class="step-cl reveal">
-          <span class="num">i.</span>
-          <h3>Pick your pieces</h3>
-          <p>Browse the collection, choose size and colour, add to your cart.</p>
-        </div>
-        <div class="step-cl reveal">
-          <span class="num">ii.</span>
-          <h3>Send on WhatsApp</h3>
-          <p>Your full order goes straight to our WhatsApp, pre-written for you.</p>
-        </div>
-        <div class="step-cl reveal">
-          <span class="num">iii.</span>
-          <h3>Inspect, then pay</h3>
-          <p>Check the pieces at your door. You only pay when you're happy.</p>
-        </div>
+      <div class="steps-stack">
+        <article class="step-x reveal">
+          <span class="step-num">01</span>
+          <div class="step-body">
+            <h3>Pick</h3>
+            <p>Browse the drop, choose size and colour, add to bag.</p>
+          </div>
+          <span class="step-arrow" aria-hidden="true">→</span>
+        </article>
+
+        <article class="step-x reveal">
+          <span class="step-num">02</span>
+          <div class="step-body">
+            <h3>Send</h3>
+            <p>Your full order lands in our WhatsApp, pre-written. Just hit send.</p>
+          </div>
+          <span class="step-arrow" aria-hidden="true">→</span>
+        </article>
+
+        <article class="step-x reveal">
+          <span class="step-num">03</span>
+          <div class="step-body">
+            <h3>Wear</h3>
+            <p>Delivered to your door. Pay cash when you're happy with the fit.</p>
+          </div>
+          <span class="step-arrow" aria-hidden="true">→</span>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ============ CLOSING ============ -->
-  <section class="closing">
-    <div class="art" role="img" aria-label="Wear Corner monogram"></div>
-    <div class="veil"></div>
+  <!-- ============ CLOSING — massive wordmark closer ============ -->
+  <section class="closing-x">
+    <div class="closing-bg" aria-hidden="true"></div>
     <div class="wrap reveal">
-      <h2>Dress with intention.</h2>
-      <p>Elegant clothing. Trusted service.</p>
-      <span class="ornament" aria-hidden="true"><span class="dot"></span></span>
-      <a class="btn btn-primary" href="#shop">Shop the Collection</a>
+      <span class="eyebrow"><span class="dot"></span> Now Or Never</span>
+      <h2 class="closing-word">UNDRESS.</h2>
+      <p>Cut Clean · Worn Loud</p>
+      <a class="btn btn-primary" href="#shop">Shop the Drop <span class="arr">→</span></a>
     </div>
   </section>
 
@@ -224,12 +291,12 @@
 <footer>
   <div class="wrap">
     <a href="#top" class="brand">
-      <img class="logo-img" src="logo.jpg" alt="Wear Corner logo">
-      WEAR CORNER
+      <img class="logo-img" src="logo.jpg" alt="Undress logo">
+      UNDRESS
     </a>
     <div class="links">
       <a href="https://wa.me/961XXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
-      <a href="https://www.instagram.com/wearcorner.lb" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.instagram.com/undress.lb" target="_blank" rel="noopener">Instagram</a>
     </div>
   </div>
   <p class="fine" id="fine"></p>

@@ -5,99 +5,96 @@
 ═══════════════════════════════════════════ */
 const PRODUCTS = [
   {
-    id: 'classic-polo',
-    name: 'Classic Polo',
-    category: 'Polos',
+    id: 'oversized-tee',
+    name: 'Oversized Tee',
+    category: 'Tees',
+    price: 30,
+    sizes: ['S','M','L','XL','XXL'],
+    colors: [
+      { name: 'Jet Black', hex: '#0a0a0a' },
+      { name: 'Off White', hex: '#efece4' },
+      { name: 'Ash Grey',  hex: '#8a8a8a' },
+    ],
+  },
+  {
+    id: 'boxy-tee',
+    name: 'Boxy Fit Tee',
+    category: 'Tees',
+    price: 28,
+    sizes: ['M','L','XL','XXL'],
+    colors: [
+      { name: 'Washed Black', hex: '#1c1c1c' },
+      { name: 'Bone',         hex: '#e6e0d0' },
+    ],
+  },
+  {
+    id: 'oversized-hoodie',
+    name: 'Oversized Hoodie',
+    category: 'Hoodies',
+    price: 60,
+    sizes: ['S','M','L','XL','XXL'],
+    colors: [
+      { name: 'Black',   hex: '#0a0a0a' },
+      { name: 'Cream',   hex: '#efece4' },
+      { name: 'Charcoal', hex: '#2a2a2a' },
+    ],
+  },
+  {
+    id: 'zip-hoodie',
+    name: 'Zip Hoodie',
+    category: 'Hoodies',
+    price: 65,
+    sizes: ['M','L','XL','XXL'],
+    colors: [
+      { name: 'Black', hex: '#0a0a0a' },
+      { name: 'Stone', hex: '#b9b2a4' },
+    ],
+  },
+  {
+    id: 'cargo-pants',
+    name: 'Cargo Pants',
+    category: 'Bottoms',
+    price: 55,
+    sizes: ['S','M','L','XL'],
+    colors: [
+      { name: 'Black',   hex: '#0a0a0a' },
+      { name: 'Sand',    hex: '#c4b79a' },
+      { name: 'Onyx',    hex: '#1a1a1a' },
+    ],
+  },
+  {
+    id: 'sweatpants',
+    name: 'Sweatpants',
+    category: 'Bottoms',
     price: 42,
     sizes: ['S','M','L','XL','XXL'],
     colors: [
-      { name: 'White', hex: '#f4f0e6' },
-      { name: 'Black', hex: '#141414' },
-      { name: 'Navy',  hex: '#1c2436' },
+      { name: 'Black', hex: '#0a0a0a' },
+      { name: 'Grey',  hex: '#8a8a8a' },
+      { name: 'Cream', hex: '#efece4' },
     ],
   },
   {
-    id: 'pique-polo',
-    name: 'Piqué Polo',
-    category: 'Polos',
-    price: 46,
-    sizes: ['S','M','L','XL','XXL'],
+    id: 'trucker-cap',
+    name: 'Trucker Cap',
+    category: 'Accessories',
+    price: 22,
+    sizes: ['One Size'],
     colors: [
-      { name: 'Ivory',   hex: '#ede6d1' },
-      { name: 'Forest',  hex: '#2f3a26' },
-      { name: 'Camel',   hex: '#b48a5c' },
+      { name: 'Black', hex: '#0a0a0a' },
+      { name: 'White', hex: '#efece4' },
+      { name: 'Black / White', hex: '#0a0a0a' },
     ],
   },
   {
-    id: 'zip-polo',
-    name: 'Zip Polo',
-    category: 'Polos',
-    price: 52,
-    sizes: ['S','M','L','XL'],
+    id: 'crossbody-bag',
+    name: 'Crossbody Bag',
+    category: 'Accessories',
+    price: 38,
+    sizes: ['One Size'],
     colors: [
-      { name: 'Emerald', hex: '#1f4a36' },
-      { name: 'Black',   hex: '#141414' },
-      { name: 'Cream',   hex: '#e8ddc4' },
-    ],
-  },
-  {
-    id: 'long-sleeve-polo',
-    name: 'Long-Sleeve Polo',
-    category: 'Polos',
-    price: 48,
-    sizes: ['S','M','L','XL','XXL'],
-    colors: [
-      { name: 'Charcoal', hex: '#2c2c2c' },
-      { name: 'Wine',     hex: '#5a2028' },
-      { name: 'Sand',     hex: '#c6b493' },
-    ],
-  },
-  {
-    id: 'oxford-shirt',
-    name: 'Oxford Shirt',
-    category: 'Shirts',
-    price: 54,
-    sizes: ['S','M','L','XL','XXL'],
-    colors: [
-      { name: 'White',      hex: '#f4f0e6' },
-      { name: 'Sky',        hex: '#b3c8db' },
-      { name: 'Stone',      hex: '#c7bfa8' },
-    ],
-  },
-  {
-    id: 'linen-shirt',
-    name: 'Linen Shirt',
-    category: 'Shirts',
-    price: 58,
-    sizes: ['S','M','L','XL'],
-    colors: [
-      { name: 'Ivory', hex: '#ede6d1' },
-      { name: 'Olive', hex: '#5a5c3a' },
-      { name: 'Beige', hex: '#c8b898' },
-    ],
-  },
-  {
-    id: 'essential-tee',
-    name: 'Essential Tee',
-    category: 'T-Shirts',
-    price: 26,
-    sizes: ['S','M','L','XL','XXL'],
-    colors: [
-      { name: 'White', hex: '#f4f0e6' },
-      { name: 'Black', hex: '#141414' },
-      { name: 'Grey',  hex: '#8a8a82' },
-    ],
-  },
-  {
-    id: 'heavyweight-tee',
-    name: 'Heavyweight Tee',
-    category: 'T-Shirts',
-    price: 32,
-    sizes: ['S','M','L','XL','XXL'],
-    colors: [
-      { name: 'Bone',    hex: '#e8ddc4' },
-      { name: 'Espresso', hex: '#3a2a1e' },
-      { name: 'Navy',    hex: '#1c2436' },
+      { name: 'Black',   hex: '#0a0a0a' },
+      { name: 'Off White', hex: '#efece4' },
     ],
   },
 ];
@@ -122,7 +119,7 @@ function saveCart() {
     size:  i.size,
     qty:   i.qty,
   }));
-  sessionStorage.setItem('wc_cart', JSON.stringify(serialisable));
+  sessionStorage.setItem('undress_cart', JSON.stringify(serialisable));
 }
 
 /* ═══════════════════════════════════════════
@@ -480,7 +477,7 @@ document.addEventListener('DOMContentLoaded', () => {
   injectStyles();
 
   document.getElementById('fine').textContent =
-    '© ' + new Date().getFullYear() + ' WEAR CORNER. Delivery across Lebanon.';
+    '© ' + new Date().getFullYear() + ' UNDRESS. Lebanon-wide delivery.';
 
   // Reveal static page sections (hero, standard, reviews etc.)
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
